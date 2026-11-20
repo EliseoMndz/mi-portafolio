@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
-    <style>
-        body {
-            background-color: rgba(0, 68, 83, 0.669);
-            color: white;
-        }
-
-        footer {
-            color: black;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <nav>Inicio</nav>
-        <nav>Proyectos</nav>
-        <nav>Contactos</nav>
-        <h1>Mi nombre es Diego Eliseo Mendez</h1>
-    </header>
+    <header><h1>Mi contacto</h1></header>
+    <main>
+        <form action="/prcesar" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="Nombre" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required >
+                <br>
+                <label for="issue">Asunto</label>
+                <select name="issue" id="issue" required>
+                    <option value="">Seleccione un asunto</option>
+                    <option value="estudio">Estudio</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="otro">Otro</option>
 
-    <nav>
-        <a href="#inicio">Sobre Mi</a>
-        <a href="#sobremi">Mis Metas</a>
-    
-    </nav>
-   <main>
-    <h3>Puedes contactarme a traves de: <a href="mailto:diegoeliseo250@gmail.com">mi correo electronico</a> o a traves de mi <a href="https://github.com/EliseoMndz/mi-portafolio.git"> Github</a></h3>
+                </select>
+                <br>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <br>
+                <input type="checkbox" id="checkbox" name="aceptar" required>
+                <label for="checkbox">Acepto que me contacten</label>
+                <br>
+                <button type="submit"> Ennviar mensaje</button>
+                <button type="reset">Borrar todo</button>
 
-   </main>
-    <footer> © 2026- San Salvador, El Salvador.
-    </footer>
+
+
+            </fieldset>
+
+
+
+
+
+        </form>
+
+
+    </main>
 </body>
-
 </html>
